@@ -14,14 +14,26 @@ WIN_COMBINATIONS = [
   [2, 4, 6]
 ]
 
-def won?(array)
-  WIN_COMBINATIONS.each do |winner_set|
-    if array[winner_set[0]] == array[winner_set[1]] &&
-       array[winner_set[1]] == array[winner_set[2]] &&
-       position_taken?(array, winner_set[0])
-       puts "somebody won!"
-       return true
-       return winner_set
+def won?(board)
+  new_arr = []
+  WIN_COMBINATIONS.each do |array|
+
+      win_index_1 = array[0]
+      win_index_2 = array[1]
+      win_index_3 = array[2]
+      position_1 = board[win_index_1]
+      position_2 = board[win_index_2]
+      position_3 = board[win_index_3]
+      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        new_arr.push(array[0])
+        new_arr.push(array[1])
+        new_arr.push(array[2])
+        return new_arr
+      elsif position_1 == "O" && position_2 == "0" && position_3 == "0"
+        new_arr.push(array[0])
+        new_arr.push(array[1])
+        new_arr.push(array[2])
+        return new_arr
+      end
     end
   end
-end
