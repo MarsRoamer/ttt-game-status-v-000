@@ -55,3 +55,12 @@ end
 def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
+
+def winner(board)
+  won?(board)
+  if new_arr[0] == "X"
+    return "X"
+  else
+    return "O"
+  end
+end
