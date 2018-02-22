@@ -15,7 +15,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  new_arr = []
   WIN_COMBINATIONS.each do |array|
+      new_arr.push(array[0])
+      new_arr.push(array[1])
+      new_arr.push(array[2])
       win_index_1 = array[0]
       win_index_2 = array[1]
       win_index_3 = array[2]
@@ -23,10 +27,9 @@ def won?(board)
       position_2 = board[win_index_2]
       position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return array
+        return new_arr
       elsif position_1 == "O" && position_2 == "0" && position_3 == "0"
-        return array
-
+        return new_arr
       end
     end
   end
