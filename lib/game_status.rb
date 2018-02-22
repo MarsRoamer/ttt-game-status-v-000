@@ -18,21 +18,21 @@ def won?(board)
   new_arr = []
   WIN_COMBINATIONS.each do |array|
 
-      win_index_1 = WIN_COMBINATIONS[0]
-      win_index_2 = WIN_COMBINATIONS[1]
-      win_index_3 = WIN_COMBINATIONS[2]
+      win_index_1 = array[0]
+      win_index_2 = array[1]
+      win_index_3 = array[2]
       position_1 = board[win_index_1]
       position_2 = board[win_index_2]
       position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        new_arr.push(WIN_COMBINATIONS[0])
-        new_arr.push(WIN_COMBINATIONS[1])
-        new_arr.push(WIN_COMBINATIONS[2])
+        new_arr.push(array[0])
+        new_arr.push(array[1])
+        new_arr.push(array[2])
         return new_arr
-      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        new_arr.push(WIN_COMBINATIONS[0])
-        new_arr.push(WIN_COMBINATIONS[1])
-        new_arr.push(WIN_COMBINATIONS[2])
+      elsif position_1 == "O" && position_2 == "0" && position_3 == "0"
+        new_arr.push(array[0])
+        new_arr.push(array[1])
+        new_arr.push(array[2])
         return new_arr
       end
     end
