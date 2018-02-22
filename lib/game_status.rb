@@ -26,7 +26,7 @@ def won?(board)
         return array
       elsif position_1 == "O" && position_2 == "0" && position_3 == "0"
         return array
-      
+
       end
     end false
   end
