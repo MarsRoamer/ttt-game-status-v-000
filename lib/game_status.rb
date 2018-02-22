@@ -58,7 +58,6 @@ end
 
 def winner(board)
 won?(board)
-  new_arr = []
   WIN_COMBINATIONS.each do |array|
 
       win_index_1 = array[0]
@@ -76,4 +75,4 @@ won?(board)
     end
       nil
   end
-end
+
