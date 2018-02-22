@@ -40,6 +40,6 @@ def won?(board)
       false
   end
 
-def full(board)
-  board.none?{|i| i != " "}
+def full?(board)
+  board.none?{|i| i == " "}
 end
