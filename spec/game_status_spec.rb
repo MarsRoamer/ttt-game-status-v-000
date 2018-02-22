@@ -17,7 +17,7 @@ describe "./lib/game_status.rb" do
   end
 
   describe "#won?" do
-    
+
 
     it 'returns an array of matching indexes for a middle row win' do
       board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
