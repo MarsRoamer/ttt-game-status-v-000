@@ -18,9 +18,9 @@ def won?(board)
   new_arr = []
   WIN_COMBINATIONS.each do |array|
 
-      win_index_1 = array[0]
-      win_index_2 = array[1]
-      win_index_3 = array[2]
+      win_index_1 = WIN_COMBINATIONS[0]
+      win_index_2 = WIN_COMBINATIONS[1]
+      win_index_3 = WIN_COMBINATIONS[2]
       position_1 = board[win_index_1]
       position_2 = board[win_index_2]
       position_3 = board[win_index_3]
