@@ -29,7 +29,7 @@ def won?(board)
         new_arr.push(array[1])
         new_arr.push(array[2])
         return new_arr
-      elsif position_1 == "O" && position_2 == "0" && position_3 == "0"
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
         new_arr.push(array[0])
         new_arr.push(array[1])
         new_arr.push(array[2])
