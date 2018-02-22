@@ -43,3 +43,8 @@ def won?(board)
 def full?(board)
   board.none?{|i| i == " "}
 end
+
+def draw?(board)
+  if !won? && !full?
+  end
+end
