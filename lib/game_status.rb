@@ -28,5 +28,5 @@ def won?(board)
         return array
 
       end
-    end 
+    end
   end
