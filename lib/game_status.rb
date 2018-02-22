@@ -34,8 +34,8 @@ def won?(board)
         new_arr.push(array[1])
         new_arr.push(array[2])
         return new_arr
-      
+
       end
-    end 
+    end
       false
   end
